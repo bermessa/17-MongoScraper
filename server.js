@@ -15,12 +15,12 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 //Set Heroku
-// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/scraper";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/scraper";
 
 //Set Mongoose
 var mongoose = require("mongoose");
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/scraper");
+mongoose.connect(MONGODB_URI);
 
 //Routes
 var routes = require("./controllers/controller.js");
