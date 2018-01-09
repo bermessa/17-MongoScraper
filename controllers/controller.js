@@ -29,7 +29,7 @@ app.get("/scrape", function(req, res) {
 
     axios.get("https://www.reddit.com/r/webdev").then(function(response) {
         var $ = cheerio.load(response.data);
-
+        console.log("test");
         $("p.title").each(function(i, element) {
 
             var result = {};
