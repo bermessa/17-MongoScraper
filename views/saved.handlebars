@@ -1,0 +1,20 @@
+<div class="panel-body">
+    <div class="row">
+        <div class="col-md-12 savedResults">
+
+            {{#each articles}}
+
+            <p class="title">
+                {{this.title}}
+            </p>
+
+            <p class="link">
+                <a href="{{this.link}}" target="_blank" id="linkOne">Link to article</a> |
+                <a class="clickDelete" id="linkTwo" data-id={{this._id}}>Delete from Saved Article</a>
+            </p>
+
+            <br> {{/each}}
+
+        </div>
+    </div>
+</div>

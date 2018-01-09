@@ -1,0 +1,18 @@
+* Folder: Models
+    * File: Article.js
+        * ArticleSchema
+            *title
+            *link
+            *note
+    * File: Note.js
+        * NoteSchema
+            *title
+            *body
+    * File: index.js
+        * module.export = Article & Note
+
+* Folder: Public
+    * File: HTML
+    * File: JS
+
+* File: server.js
